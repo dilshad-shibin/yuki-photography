@@ -1,0 +1,1361 @@
+/* ? Over All Styling */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a {
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+ :focus {
+    outline: none;
+}
+
+
+/*  global font */
+
+body {
+    font-family: "Open Sans", serif;
+    box-sizing: border-box;
+}
+
+.section {
+    padding: 180px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container_padding {
+    padding: 0 100px;
+}
+
+.sec-header {
+    margin-bottom: 50px;
+    display: block;
+}
+
+.sec-header2 {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.sec-small-title {
+    font-size: 12px;
+    color: #999999;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.sec-title {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: black;
+    font-family: "Playfair Display", serif;
+}
+
+.sec-para {
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+    margin-top: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 0 165px;
+}
+
+.sec-text {
+    font-size: 14px;
+    color: #999999;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 26px;
+}
+
+.page_links {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    text-transform: capitalize;
+    display: inline-block;
+    border: 1px solid #ccae62;
+    padding: 12px 50px;
+    color: #ccae62;
+}
+
+.page_links:hover {
+    color: white;
+    background: #ccae62;
+    transition: 0.5s;
+}
+
+.active {
+    color: #ccae62 !important;
+}
+
+.hero_page {
+    padding: 80px 0 120px;
+    text-align: center;
+}
+
+.hero_page h1 {
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: "Playfair Display", serif;
+    color: white;
+    text-transform: capitalize;
+}
+
+@media (max-width: 960px) {
+    .section {
+        padding: 100px 0;
+    }
+    .sec-title {
+        font-size: 26px;
+    }
+    .hero_page h1 {
+        font-size: 40px;
+    }
+    .hero_page {
+        padding: 60px 0 100px;
+    }
+    .container_padding {
+        padding: 0 50px;
+    }
+    .sec-para {
+        padding: 0;
+    }
+    .sec-header {
+        margin-bottom: 40px;
+    }
+    .page_links {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding: 80px 0;
+    }
+    .container_padding {
+        padding: 0 15px;
+    }
+    .sec-header {
+        margin-bottom: 35px;
+    }
+    .sec-header2 {
+        margin-bottom: 25px;
+    }
+    .hero_page h1 {
+        font-size: 30px;
+    }
+    .hero_page {
+        padding: 50px 0 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sec-title {
+        font-size: 24px;
+    }
+    .sec-para {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .container_padding {
+        padding: 0;
+    }
+    .page_links {
+        margin-top: 30px;
+    }
+}
+
+
+/* ======================================================================
+  
+                                  ! 1. Home Page 
+  
+  ========================================================================*/
+
+#home_header {
+    min-height: 900px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/background.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 960px) {
+    header,
+    #home_header {
+        min-height: auto;
+    }
+}
+
+
+/* ? Main navigator layout */
+
+.main_navigator {
+    padding: 26px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ? logo styling */
+
+.logo a {
+    color: white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo a img {
+    display: block;
+}
+
+
+/* * Nav Links layout && styling */
+
+.btn_nav_left li {
+    display: inline-block;
+}
+
+.btn_nav_right a,
+.btn_nav_left a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+}
+
+.btn_nav_left a:hover {
+    color: #ccae62;
+}
+
+.btn_nav_left li {
+    margin-left: 26px;
+}
+
+
+/* * Responsive Navigator Layout */
+
+.responsive_navigator {
+    padding: 30px 0;
+    display: none;
+    position: relative;
+}
+
+.responsive_toggel_warp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.responsive_navigator .logo a img {
+    margin-bottom: 0px;
+    display: block;
+}
+
+
+/* * Toggel button layout */
+
+.menu-toggel {
+    cursor: pointer;
+    display: block;
+}
+
+.menu-toggel span {
+    background: white;
+    height: 2px;
+    width: 30px;
+    display: block;
+}
+
+.menu-toggel span.line-1,
+.menu-toggel span.line-2 {
+    margin-bottom: 8px;
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+}
+
+
+/* * Menu navigator layout */
+
+.reponsive_menu {
+    background: rgba(0, 0, 0, 1);
+    position: absolute;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    top: 80%;
+    z-index: 10;
+    display: none;
+}
+
+
+/* ? Responsive nav layout */
+
+.reponsive_menu li {
+    margin-bottom: 40px;
+}
+
+.reponsive_menu a {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.reponsive_menu ul li:last-child {
+    margin-bottom: 0px;
+}
+
+@media (max-width: 960px) {
+    .main_navigator {
+        display: none;
+    }
+    .responsive_navigator {
+        display: block;
+    }
+}
+
+
+/* ? Hero Section */
+
+.hero {
+    padding: 300px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 24px;
+}
+
+.hero p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 960px) {
+    .hero {
+        padding: 200px 0;
+    }
+    .hero h1 {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+    .hero p {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 30px;
+        margin-bottom: 19px;
+    }
+    .hero p {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* ! -------- 1.2 Works Sectoin -------- */
+
+.work-sec .work_image_warp {
+    height: 240px;
+}
+
+.work_image_warp {
+    width: 100%;
+    position: relative;
+}
+
+.work_image_warp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image_category {
+    position: absolute;
+    height: 20px;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    margin: auto;
+    transition: 50ms;
+}
+
+.image_category p {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.work_image_warp::after {
+    content: "";
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    transition: 50ms;
+}
+
+.work_image_warp:hover::after,
+.work_image_warp:hover .image_category {
+    opacity: 1;
+    transition: 100ms;
+}
+
+@media (max-width: 960px) {
+    .work-sec .work_image_warp {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .work-sec .row .col-1-3:nth-child(-n + 2) {
+        margin-bottom: 15px;
+    }
+    .work-sec .row {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* !-------- 1.3 Stat Sectoin -------- */
+
+.stat-sec {
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/slider3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.stat_icon {
+    margin-right: 20px;
+}
+
+
+/* Numbers styling */
+
+.stat_info .number {
+    color: #ccae62;
+    font-size: 55px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+
+/* Under text(numbers)  */
+
+.stat_info h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+
+/* Responsive Stat  Section  */
+
+@media (max-width: 960px) {
+    .stat-sec .row .col-1-4:nth-child(-n + 3) {
+        margin-bottom: 30px;
+    }
+    .stat_info span {
+        font-size: 35px;
+    }
+    .stat-sec {
+        padding: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .stat-sec {
+        padding: 50px;
+    }
+}
+
+
+/* --------	1.4 About Section -------- */
+
+.about_info_warp {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.about-sec-bg {
+    position: relative;
+}
+
+.about_img {
+    width: 100%;
+}
+
+
+/* corners position */
+
+.about-sec-bg .corner {
+    position: absolute;
+}
+
+.corner_1 {
+    top: 5%;
+    left: 5%;
+}
+
+.corner_2 {
+    top: 5%;
+    right: 5%;
+}
+
+.corner_3 {
+    bottom: 5%;
+    left: 5%;
+}
+
+.corner_4 {
+    bottom: 5%;
+    right: 5%;
+}
+
+
+/* text about styling */
+
+@media (max-width: 960px) {
+    .about_info_warp {
+        flex-direction: column;
+        text-align: left;
+    }
+    .about-sec-bg {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* -------- 1.5 Testimonials Section --------*/
+
+.testimonail-section {
+    background: #f5f5f5;
+}
+
+.testimonail_slider h3 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.testimonail_slider p {
+    font-size: 14px;
+    color: #999999;
+    font-weight: 400;
+    padding: 0 150px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 960px) {
+    .testimonail-sec {
+        padding-top: 150px;
+    }
+    .testimonail_slider p {
+        padding: 0 10px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonail-sec {
+        padding-top: 80px;
+    }
+    .testimonail_slider p {
+        font-size: 12px;
+    }
+}
+
+
+/* !-------- footer OverAll -------- */
+
+footer {
+    padding: 80px 0;
+    background: black;
+    text-align: center;
+}
+
+footer .logo img {
+    margin-bottom: 10px;
+}
+
+.footer_nav {
+    margin: 50px 0;
+}
+
+.footer_nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer_nav a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+}
+
+
+/* social media */
+
+.social_media {
+    margin-bottom: 50px;
+}
+
+.social_media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social_media a {
+    font-size: 12px;
+    color: white;
+}
+
+.social_media a:hover,
+.footer_nav a:hover {
+    color: #ccae62;
+}
+
+
+/* Copyright */
+
+.copyright p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: white;
+    opacity: 0.8;
+    text-transform: capitalize;
+}
+
+@media (max-width: 960px) {
+    .footer_nav li {
+        margin: 0 5px;
+    }
+    footer {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        padding: 50px 0;
+    }
+    .footer_nav a {
+        font-size: 12px;
+    }
+    .footer_nav,
+    .social_media {
+        margin: 25px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer_nav li:nth-child(-n + 4) {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* ======================================================================
+                              
+  !              2. Portfolio pages Styling   
+  
+  ========================================================================*/
+
+.portfolio_header {
+    min-height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/portfolio-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio_tall .work_image_warp {
+    height: 359px;
+}
+
+.simple-portfolio .col-1-3 {
+    margin-bottom: 30px;
+}
+
+.simple-portfolio .col-1-3:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
+
+@media (max-width: 960px) {
+    .simple-portfolio {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .portfolio_tall .work_image_warp {
+        height: 100%;
+    }
+    .simple-portfolio .col-1-3 {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
+    }
+    .simple-portfolio .col-1-3:nth-last-child(-n + 3) {
+        margin-bottom: 15px;
+    }
+    .simple-portfolio .col-1-3:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+
+/* ======================================================================
+                              
+                      !	3. Single pages Styling   
+  
+  ========================================================================*/
+
+.single_header {
+    min-height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/slider-header3.png) no-repeat;
+    background-position: 0% 63%;
+    background-size: cover;
+}
+
+.single_container {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 60px;
+}
+
+.single_container img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.single01 img {
+    height: 100%;
+}
+
+.single_nav ul {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.single_nav a {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.single_nav a:hover {
+    color: #ccae62;
+    transition: 50ms;
+}
+
+@media (max-width: 960px) {
+    .single_header {
+        min-height: 350px;
+    }
+    .single_container {
+        max-width: 100%;
+    }
+    .single_container img {
+        margin-bottom: 15px;
+    }
+    .single_container img:last-child {
+        margin-bottom: 0;
+    }
+    .single_nav ul {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .single_header {
+        min-height: 250px;
+    }
+}
+
+
+/* ======================================================================
+                              
+                      !	4. About us pages Styling   
+  
+  ========================================================================*/
+
+.about_header {
+    min-height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/about-us-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.align_left {
+    text-align: left;
+}
+
+.align_right {
+    text-align: right;
+}
+
+.about--page .container {
+    display: flex;
+    align-items: center;
+}
+
+.about--page img {
+    width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+.quote {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/slider3.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+
+/* .quote img{
+    transition: 50ms ;
+    animation: scling 5s infinite;
+  }
+  .quote img:hover{
+    animation: scling 5s paused;
+  }
+  
+  @keyframes scling {
+    0% ,100%  { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  } */
+
+.quote-text {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 960px) {
+    .about--page .container {
+        flex-direction: column;
+    }
+    .about--page img {
+        margin-bottom: 30px;
+    }
+    .align_left,
+    .align_right {
+        text-align: left;
+    }
+    .align_right .container {
+        flex-direction: column-reverse;
+    }
+    .quote-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .quote-text {
+        font-size: 18px;
+    }
+}
+
+.about--team {
+    background: #f5f5f5;
+}
+
+.team--info img {
+    width: 100%;
+    vertical-align: middle;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.team--info h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.team--info p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #999999;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.team--info li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.team--info a {
+    font-size: 14px;
+    color: black;
+}
+
+.team--info a:hover {
+    color: #ccae62;
+    transition: 50ms;
+}
+
+@media (max-width: 960px) {
+    .team--info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .team--info .col-1-3:nth-child(-n + 2) {
+        margin-bottom: 30px;
+    }
+    .team--info img,
+    .team--info p {
+        margin-bottom: 10px;
+    }
+}
+
+
+/*  ======================================================================
+                              
+                      !	5. Service pages Styling   
+  
+  ========================================================================*/
+
+.service_header {
+    min-height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/slider-header1.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sec-service .row .col-1-3:nth-child(-n + 3) {
+    margin-bottom: 40px;
+}
+
+.service_warp {
+    text-align: left;
+}
+
+.service_warp img {
+    margin-bottom: 20px;
+}
+
+.service_warp h3,
+.pricing-warp h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.pricing-warp {
+    text-align: center;
+    padding: 40px 20px;
+    border: 1px solid #e8e8e8;
+}
+
+.divider {
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #e8e8e8;
+    width: 100px;
+    display: inline-block;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.pricing-warp h3 {
+    padding-bottom: 10px;
+    color: #ccae62;
+}
+
+.pricing-warp li {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #999999;
+    text-transform: capitalize;
+}
+
+.pricing-warp .price {
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-family: "Playfair Display", serif;
+}
+
+.service-block-q {
+    background: #ccae62;
+}
+
+.service-block-q .sec-small-title {
+    color: white;
+}
+
+@media (max-width: 960px) {
+    .sec-service .row .col-1-3 {
+        width: 50%;
+    }
+    .sec-service .row .col-1-3:nth-child(-n + 4) {
+        margin-bottom: 30px;
+    }
+    .service_warp img {
+        margin-bottom: 10px;
+    }
+    .service_warp h3 {
+        margin-bottom: 10px;
+    }
+    .pricing .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pricing .row .col-1-3 {
+        width: 50%;
+    }
+    .pricing .row .col-1-3:nth-child(-n + 2) {
+        margin-bottom: 30px;
+    }
+    .pricing-warp li {
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    .pricing-warp .price {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .divider {
+        width: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sec-service .row .col-1-3 {
+        width: 100%;
+    }
+    .sec-service .row .col-1-3:nth-child(-n + 5) {
+        margin-bottom: 30px;
+    }
+    .pricing .row .col-1-3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-warp li {
+        font-size: 12px;
+    }
+}
+
+
+/* ======================================================================
+                              
+                      !	6. Testimonials page Styling   
+  
+  ========================================================================*/
+
+.testimonail_header {
+    min-height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/testimonials-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.testimonail-page--warp {
+    text-align: left;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.testimonail-page--warp .sec-text {
+    margin-top: 0;
+}
+
+.testimonail-page--warp:last-of-type {
+    margin-bottom: 0;
+}
+
+.client_name {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.testimonail_date {
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 12px;
+}
+
+@media (max-width: 960px) {
+    .client_name {
+        font-size: 18px;
+    }
+    .testimonail_date {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonail-page--warp {
+        margin-bottom: 40px;
+    }
+    .client_say {
+        font-size: 14px;
+    }
+    .testimonail_date {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .client_say {
+        font-size: 12px;
+    }
+    .testimonail_date {
+        font-size: 10px;
+    }
+}
+
+
+/* ======================================================================
+                              
+                      !	7. Contact pages Styling   
+  
+  ========================================================================*/
+
+.contact_header {
+    min-height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/contact-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact_section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact_section img {
+    vertical-align: middle;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* form styling */
+
+.contact_section form {
+    width: 100%;
+}
+
+.contact_section input,
+.contact_section textarea {
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    background: transparent;
+    color: black;
+    padding: 6px;
+    letter-spacing: 1px;
+    font-family: "Open Sans", serif;
+}
+
+.contact_section input::placeholder,
+.contact_section textarea::placeholder {
+    font-family: "Open Sans", serif;
+    color: #b5b5b5;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.contact_section input:focus::placeholder,
+.contact_section textarea:focus::placeholder {
+    opacity: 0;
+}
+
+.contact_section textarea {
+    resize: none;
+}
+
+
+/* submit button */
+
+.contact_section button {
+    padding: 20px 50px;
+    color: #ccae62;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: open-sans, sans-serif;
+    background: transparent;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #ccae62;
+}
+
+.contact_section button:hover {
+    color: white;
+    background: #ccae62;
+    transition: 0.5s;
+}
+
+.contact_info {
+    margin-top: 100px;
+}
+
+.contact_info ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.contact_info li {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.contact_info li span {
+    font-weight: 600;
+}
+
+@media (max-width: 960px) {
+    .contact_section {
+        flex-direction: column-reverse;
+    }
+    .contact_section img {
+        width: 100%;
+        float: none;
+    }
+    .contact_section button {
+        margin: 0 auto 40px;
+    }
+    .contact_info ul {
+        flex-direction: column;
+    }
+    .contact_info li {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .contact_info li span {
+        margin-bottom: 5px;
+    }
+    .contact_info li:last-child {
+        margin-bottom: 0px;
+    }
+    .contact_info {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact_info li span {
+        font-size: 12px;
+    }
+}
